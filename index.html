@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <img id="random-header" class="header-image" src="default-header.jpg" alt="Website Header">
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">SECTION 1</a>
+        <a href="media.html">SECTION 2</a>
+        <a href="writings.html">SECTION 3</a>
+    </div>
+    
+    <hr class="dashed">
+
+    <div style="text-align: center;">
+        <h2>WELCOME</h2>
+        <p>This is a generic placeholder paragraph introducing the purpose of the website.</p>
+    </div>
+
+    <hr class="dashed">
+
+    <div class="split-column">
+        <div class="column">
+            <h3><u>LATEST UPDATES:</u></h3>
+            <p>＊YYYY/MM/DD: Placeholder update text entry one.</p>
+            <p>＊YYYY/MM/DD: Placeholder update text entry two.</p>
+            <p>＊YYYY/MM/DD: Placeholder update text entry three.</p>
+        </div>
+        <div class="column">
+            <h3><u>CURRENT STATUS:</u></h3>
+            <p>＊Item One: Status description.</p>
+            <p>＊Item Two: Status description.</p>
+            <p>＊Item Three: Status description.</p>
+        </div>
+    </div>
+
+    <hr class="dashed">
+    
+    <h3><u>DIRECTORY:</u></h3>
+    <p>＊<a href="#">PAGE ONE</a>: Description of what can be found on this page.</p>
+    <p>＊<a href="#">PAGE TWO</a>: Description of what can be found on this page.</p>
+    <p>＊<a href="#">PAGE THREE</a>: Description of what can be found on this page.</p>
+
+    <script>
+        // 1. Define your array of image filenames here
+        const headers = [
+            'header-image-1.jpg',
+            'header-image-2.jpg',
+            'header-image-3.jpg'
+        ];
+
+        // 2. Pick a random index from the array
+        const randomIndex = Math.floor(Math.random() * headers.length);
+        const selectedHeader = headers[randomIndex];
+
+        // 3. Apply the chosen image to the img tag with the id "random-header"
+        document.getElementById('random-header').src = selectedHeader;
+    </script>
+
+</body>
+</html>
